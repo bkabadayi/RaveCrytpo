@@ -14,6 +14,7 @@
 		5A4335652A55AE4F00E7F144 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335642A55AE4F00E7F144 /* ColorExtension.swift */; };
 		5A4335682A55F37F00E7F144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335672A55F37F00E7F144 /* HomeView.swift */; };
 		5A43356B2A55F46A00E7F144 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */; };
+		5A43356D2A56A2B700E7F144 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43356C2A56A2B700E7F144 /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5A4335642A55AE4F00E7F144 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		5A4335672A55F37F00E7F144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		5A43356C2A56A2B700E7F144 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */,
+				5A43356C2A56A2B700E7F144 /* CircleButtonAnimationView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				5A4335582A559E2C00E7F144 /* ContentView.swift in Sources */,
 				5A43356B2A55F46A00E7F144 /* CircleButtonView.swift in Sources */,
 				5A4335562A559E2C00E7F144 /* RaveCryptoApp.swift in Sources */,
+				5A43356D2A56A2B700E7F144 /* CircleButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
