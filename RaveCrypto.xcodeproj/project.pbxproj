@@ -12,6 +12,8 @@
 		5A43355A2A559E2D00E7F144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4335592A559E2D00E7F144 /* Assets.xcassets */; };
 		5A43355D2A559E2D00E7F144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A43355C2A559E2D00E7F144 /* Preview Assets.xcassets */; };
 		5A4335652A55AE4F00E7F144 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335642A55AE4F00E7F144 /* ColorExtension.swift */; };
+		5A4335682A55F37F00E7F144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335672A55F37F00E7F144 /* HomeView.swift */; };
+		5A43356B2A55F46A00E7F144 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		5A4335592A559E2D00E7F144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A43355C2A559E2D00E7F144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A4335642A55AE4F00E7F144 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		5A4335672A55F37F00E7F144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		5A4335542A559E2C00E7F144 /* RaveCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				5A4335692A55F45700E7F144 /* Controls */,
+				5A4335662A55F37500E7F144 /* Views */,
 				5A4335632A55AE3600E7F144 /* Extensions */,
 				5A4335552A559E2C00E7F144 /* RaveCryptoApp.swift */,
 				5A4335572A559E2C00E7F144 /* ContentView.swift */,
@@ -76,6 +82,22 @@
 				5A4335642A55AE4F00E7F144 /* ColorExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A4335662A55F37500E7F144 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A4335672A55F37F00E7F144 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A4335692A55F45700E7F144 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A4335652A55AE4F00E7F144 /* ColorExtension.swift in Sources */,
+				5A4335682A55F37F00E7F144 /* HomeView.swift in Sources */,
 				5A4335582A559E2C00E7F144 /* ContentView.swift in Sources */,
+				5A43356B2A55F46A00E7F144 /* CircleButtonView.swift in Sources */,
 				5A4335562A559E2C00E7F144 /* RaveCryptoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
