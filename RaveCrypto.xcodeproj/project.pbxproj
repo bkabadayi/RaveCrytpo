@@ -16,6 +16,10 @@
 		5A43356B2A55F46A00E7F144 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */; };
 		5A43356D2A56A2B700E7F144 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43356C2A56A2B700E7F144 /* CircleButtonAnimationView.swift */; };
 		5A4335702A56A5DA00E7F144 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43356F2A56A5DA00E7F144 /* CoinModel.swift */; };
+		5A4335722A56B03300E7F144 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335712A56B03300E7F144 /* CoinRowView.swift */; };
+		5A4335742A56B09300E7F144 /* PreviewProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335732A56B09300E7F144 /* PreviewProviderExtension.swift */; };
+		5A4335762A56B32600E7F144 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335752A56B32600E7F144 /* DoubleExtension.swift */; };
+		5A4335792A59DFA200E7F144 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335782A59DFA200E7F144 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		5A43356A2A55F46A00E7F144 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		5A43356C2A56A2B700E7F144 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		5A43356F2A56A5DA00E7F144 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		5A4335712A56B03300E7F144 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		5A4335732A56B09300E7F144 /* PreviewProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProviderExtension.swift; sourceTree = "<group>"; };
+		5A4335752A56B32600E7F144 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		5A4335782A59DFA200E7F144 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 		5A4335542A559E2C00E7F144 /* RaveCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				5A4335772A59DF9600E7F144 /* ViewModels */,
 				5A43356E2A56A5D300E7F144 /* Models */,
 				5A4335692A55F45700E7F144 /* Controls */,
 				5A4335662A55F37500E7F144 /* Views */,
@@ -85,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				5A4335642A55AE4F00E7F144 /* ColorExtension.swift */,
+				5A4335732A56B09300E7F144 /* PreviewProviderExtension.swift */,
+				5A4335752A56B32600E7F144 /* DoubleExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -93,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5A4335672A55F37F00E7F144 /* HomeView.swift */,
+				5A4335712A56B03300E7F144 /* CoinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +124,14 @@
 				5A43356F2A56A5DA00E7F144 /* CoinModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5A4335772A59DF9600E7F144 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5A4335782A59DFA200E7F144 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4335762A56B32600E7F144 /* DoubleExtension.swift in Sources */,
+				5A4335792A59DFA200E7F144 /* HomeViewModel.swift in Sources */,
+				5A4335722A56B03300E7F144 /* CoinRowView.swift in Sources */,
 				5A4335652A55AE4F00E7F144 /* ColorExtension.swift in Sources */,
 				5A4335682A55F37F00E7F144 /* HomeView.swift in Sources */,
+				5A4335742A56B09300E7F144 /* PreviewProviderExtension.swift in Sources */,
 				5A4335582A559E2C00E7F144 /* ContentView.swift in Sources */,
 				5A43356B2A55F46A00E7F144 /* CircleButtonView.swift in Sources */,
 				5A4335562A559E2C00E7F144 /* RaveCryptoApp.swift in Sources */,

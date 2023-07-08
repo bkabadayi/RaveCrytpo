@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct RaveCryptoApp: App {
+    
+    @StateObject private var viewModel: HomeViewModel = .init()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 HomeView()
                     .toolbar(.hidden)
-            }
+            }.environmentObject(viewModel)
         }
     }
 }
