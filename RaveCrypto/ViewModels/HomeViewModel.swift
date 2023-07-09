@@ -15,6 +15,7 @@ class HomeViewModel: ObservableObject {
     @Published var allCoins: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
     @Published var searchText = ""
+    @Published var stats: [StatisticModel] = []
     
     init() {
        addSubscribers()
@@ -23,8 +24,8 @@ class HomeViewModel: ObservableObject {
     private func addSubscribers() {
         $searchText.combineLatest(dataService.$allCoins)
                    .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
-                   .map { (text, startingCoins) in
-                          guard !text.isEmpty else { return }
+                   .map { (text, startingCoins) -> [CoinModel] in
+                          guard !text.isEmpty else { return startingCoins }
                            
                           return startingCoins.filter { (coin) -> Bool in
                               return coin.name.lowercased().contains(text.lowercased()) ||

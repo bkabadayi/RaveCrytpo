@@ -20,6 +20,7 @@ struct HomeView: View {
             
             VStack {
                 homeHeader
+                HomeStatsView(showPortfolio: $showPortfolio)
                 SearchBarView(searchText: $viewModel.searchText)
                 columnTitles
                 
@@ -40,8 +41,7 @@ extension HomeView {
     private var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-                .animation(.none,
-                           value: 0)
+                .animation(.none, value: showPortfolio)
                 .background(CircleButtonAnimationView(animate: $showPortfolio))
             Spacer()
             Text(showPortfolio ? "Portfolio" : "Live Prices")
