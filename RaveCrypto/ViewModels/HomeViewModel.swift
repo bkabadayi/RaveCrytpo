@@ -21,8 +21,20 @@ class HomeViewModel: ObservableObject {
     }
     
     private func addSubscribers() {
-        dataService.$allCoins.sink { [unowned self] (coins) -> Void in
-            self.allCoins = coins
-        }.store(in: &cancellables)
+        $searchText.combineLatest(dataService.$allCoins)
+                   .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+                   .map { (text, startingCoins) in
+                          guard !text.isEmpty else { return }
+                           
+                          return startingCoins.filter { (coin) -> Bool in
+                              return coin.name.lowercased().contains(text.lowercased()) ||
+                              coin.symbol.lowercased().contains(text.lowercased()) ||
+                              coin.id.lowercased().contains(text.lowercased())
+                          }
+                   }
+                   .sink { [unowned self] (coins) -> Void in
+                           self.allCoins = coins
+                   }
+                   .store(in: &cancellables)
     }
 }
