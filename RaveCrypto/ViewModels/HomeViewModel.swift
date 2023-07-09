@@ -14,7 +14,7 @@ class HomeViewModel: ObservableObject {
     private var cancellables: Set<AnyCancellable> = .init()
     @Published var allCoins: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
-    
+    @Published var searchText = ""
     
     init() {
        addSubscribers()

@@ -12,6 +12,7 @@ struct HomeView: View {
     @EnvironmentObject private var viewModel: HomeViewModel
     @State private var showPortfolio = false
     
+    
     var body: some View {
         ZStack {
             Color.theme.background
@@ -19,6 +20,7 @@ struct HomeView: View {
             
             VStack {
                 homeHeader
+                SearchBarView(searchText: $viewModel.searchText)
                 columnTitles
                 
                 if !showPortfolio {

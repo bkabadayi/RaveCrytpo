@@ -26,6 +26,7 @@
 		5A4335822A5A106A00E7F144 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335812A5A106A00E7F144 /* CoinImageService.swift */; };
 		5A4335842A5A59E400E7F144 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335832A5A59E400E7F144 /* CoinImageViewModel.swift */; };
 		5A4335862A5A5F2A00E7F144 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335852A5A5F2A00E7F144 /* LocalFileManager.swift */; };
+		5A4335882A5B0D2A00E7F144 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4335872A5B0D2A00E7F144 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		5A4335812A5A106A00E7F144 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		5A4335832A5A59E400E7F144 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		5A4335852A5A5F2A00E7F144 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		5A4335872A5B0D2A00E7F144 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				5A4335672A55F37F00E7F144 /* HomeView.swift */,
 				5A4335712A56B03300E7F144 /* CoinRowView.swift */,
 				5A43357F2A5A0F7300E7F144 /* CoinImageView.swift */,
+				5A4335872A5B0D2A00E7F144 /* SearchBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				5A4335682A55F37F00E7F144 /* HomeView.swift in Sources */,
 				5A4335742A56B09300E7F144 /* PreviewProviderExtension.swift in Sources */,
 				5A4335582A559E2C00E7F144 /* ContentView.swift in Sources */,
+				5A4335882A5B0D2A00E7F144 /* SearchBarView.swift in Sources */,
 				5A43357E2A59FD1700E7F144 /* NetworkingManager.swift in Sources */,
 				5A43356B2A55F46A00E7F144 /* CircleButtonView.swift in Sources */,
 				5A4335842A5A59E400E7F144 /* CoinImageViewModel.swift in Sources */,
